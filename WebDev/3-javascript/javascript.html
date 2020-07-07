@@ -3,34 +3,51 @@
 <html>
     <head>
         <title>javascript</title>
+        <style type="text/css">
+            #square-red {
+                background-color: red;
+                border-radius: 50%;
+            }
+            #square-blue {
+                background-color: blue;
+                border-radius: 50%;
+            }
+            #square-yellow {
+                background-color: yellow;
+                border-radius: 50%;
+            }
+            .square {
+                width: 200px;
+                height: 200px;
+                margin: 40px;
+                float: left;
+            }
+
+        </style>
     </head>
 
     <body>
-        <p id="text">Hello World!</p>
-        <button id="myButton">Change Text</button>
+        <div id="square-red" class="square"></div>
         
         <script type="text/javascript">
-            document.getElementById("myButton").onclick = function() {
-//                alert("ボタンがクリックされました!")
-                document.getElementById("text").innerHTML = "クリックしましたね！"
+            document.getElementById("square-red").onclick = function() {
+                document.getElementById("square-red").style.display = "none"
             }
         </script>
         
-        <p id="secondParagraph">JavaScriptは、</p>
-        <button id="secondButton">追記する！</button>
+        <div id="square-blue" class="square"></div>
         
-        <p id="thirdParagraph">スタイルを変更してみましょう!</p>
-        <button id="changeStyle">スタイルを変更する！</button>
         <script type="text/javascript">
-            document.getElementById("secondButton").onclick = function() {
-//                document.getElementById("secondParagraph").innerHTML =
-//                document.getElementById("secondParagraph").innerHTML + "ブラウザでもサーバーサイドでも動作するプログラミング言語です。";
-                document.getElementById("secondParagraph").innerHTML += "ブラウザでもサーバーサイドでも動作するプログラミング言語です。";
+            document.getElementById("square-blue").onclick = function() {
+                document.getElementById("square-blue").style.display = "none"
             }
-            
-            document.getElementById("changeStyle").onclick = function() {
-//                document.getElementById("thirdParagraph").style.color = "red";
-                document.getElementById("thirdParagrath").style.display = "none"
+        </script>
+        
+        <div id="square-yellow" class="square"></div>
+        
+        <script type="text/javascript">
+            document.getElementById("square-yellow").onclick = function() {
+                document.getElementById("square-yellow").style.display = "none"
             }
         </script>
         
