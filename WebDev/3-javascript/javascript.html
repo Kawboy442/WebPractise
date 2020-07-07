@@ -13,13 +13,16 @@
         
         <button id="submitButton">送信する</button>
         
+        <p id="newMessage"></p>
+        
         <script type="text/javascript">
             /* var x = 5;
             alert(x); */
             document.getElementById("submitButton").onclick = function() {
                 var name = "";
                 name = document.getElementById("inputForm").value;
-                alert(name);
+                // alert(name);
+                document.getElementById("newMessage").innerHTML = name + "さん、以下が申込内容になります。";
             }
         </script>
         
