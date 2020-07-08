@@ -22,7 +22,14 @@
                 alert("xは1ではありません。" + x + "です。");
             } */
             
-            
+            document.getElementById("checkMagicWord").onclick = function() {
+                var magicWordEntered = document.getElementById("magicWord").value;
+                var magicWord = "babababab";
+                
+                if (magicWordEntered == magicWord) {
+                    alert("OKです。");
+                }
+            }
         </script>
         
     </body>
