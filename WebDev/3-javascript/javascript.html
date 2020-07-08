@@ -9,6 +9,9 @@
     </head>
 
     <body>
+        
+        <div id="tweetsDiv">
+        </div>
         <script type="text/javascript">
             
             /* for(var i = 5; i > 0; i--) {
@@ -17,10 +20,13 @@
             */
             
             var tweets = ["Morning", "Good day!", "Dinner", "Good night!", "Nice dream!"];
+            var tweetsString = "";
             
-            for(var = i; i < tweets.length; i++) {
-                alert(tweets[i]);
+            for(var i = 0; i < tweets.length; i++) {
+                // alert(tweets[i]);
+                tweetsString = tweetsString + "<p>" + tweets[i] + "</p>";
             }
+            document.getElementById("tweetsDiv").innerHTML = tweetsString;
         </script>
         
     </body>
