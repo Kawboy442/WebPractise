@@ -22,12 +22,18 @@
      
      <script src="jquery-3.5.1.min.js"></script>
      
-    <p>このテキストはフェードアウトします</p>
+     <p id="fadeOutText">このテキストはフェードアウトします</p>
      <button id="fadeOut">フェイドアウトする！</button>
+     
+     <p id="fadeInText">最初は隠れています</p>
+     <button id="fadeOut">フェイドインする！</button>
      
      <script type=text/javascript>
          $("#fadeOut").click(function() {
-            $("p").fadeOut("slow");
+            $("#fadeOutText").fadeOut("slow");
+         })
+         $("#fadeIn").click(function() {
+            $("#fadeInText").fadeIn("slow");
          })
      </script>
      
